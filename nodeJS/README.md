@@ -10,7 +10,7 @@ and create a new app and a new set of OAuth credentials.
 
 Copy `.env.example` into `.env` and fill the values with what Google gave you.
 
-Don't forget to add `URI` and `redirect URI` in your Google Console,
+Don't forget to add `URI` and `redirect URI` with DGA digitalID-Connect,
 the ovbious thing you need to add is `http://localhost` and `http://localhost/auth/callback`.
 
 And then you simple `yarn start`.
