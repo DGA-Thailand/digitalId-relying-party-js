@@ -73,9 +73,9 @@ export default function authRoutesMiddleware(): Router {
       );
 
       //4.2 RP ส่ง request มาเพื่อ Get UserInfo
-      //5. OP return claims ของ user กลับมาให้
       const user = await client!.userinfo(tokenSet);
-      console.log("userInFo");
+      //5. OP return claims ของ user กลับมาให้
+      console.log("userClaims");
       console.log(user);
 
       const sessionCookie = serialize({ tokenSet, user });
